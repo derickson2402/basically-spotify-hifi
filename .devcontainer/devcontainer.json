@@ -1,0 +1,19 @@
+{
+	"name": "PyDev",
+	"image": "python:3.11",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"donjayamanne.python-extension-pack",
+				"yzhang.markdown-all-in-one",
+				"mtxr.sqltools",
+				"ms-azuretools.vscode-docker",
+				"fabiospampinato.vscode-diff",
+				"nhoizey.gremlins",
+				"mtxr.sqltools-driver-pg",
+				"ms-python.python"
+			]
+		}
+	},
+	"postCreateCommand": "pip install -r requirements.txt && pip install pigar"
+}
